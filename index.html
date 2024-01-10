@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showHomePage()">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <h1 id="slogan">Welcome to the Quizify !</h1>
+   <div id="me">
+    <div id="quiz-container">
+        <div id="home-page">
+            <p>Select a category:</p>
+            <button onclick="startQuiz('general')">General Knowledge</button>
+            <button onclick="startQuiz('computer')">Computer Science</button>
+            <button onclick="startQuiz('biology')">Biology</button>
+        </div>
+
+        <div id="quiz-page" style="display: none;">
+            <!-- Quiz content dynamically generated using JavaScript -->
+        </div>
+
+        <div id="result-page" style="display: none;">
+            <h2>Your Result:</h2>
+            <p id="result"></p>
+            <button onclick="goToHome()">Go Back to Home</button>
+        </div>
+    </div>
+</div>
+<footer>
+    
+    <p>&copy; 2023 MyQuiz. All rights reserved.</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html
